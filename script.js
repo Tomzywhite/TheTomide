@@ -14,6 +14,18 @@ const projects = [
         title: "Love Web",
         description: "A web application created to celebrate my commitment to my girlfriend.",
         link: "https://livtommy.vercel.app"
+    },
+    {
+        id: 3,
+        title: "Dein Web",
+        description: "A web application created to celebrate my good friend",
+        link: "https://deinty.vercel.app"
+    },
+    {
+        id: 4,
+        title: "Portfolio",
+        description: "A web application created to showcase my skills and projects.",
+        link: "https://deinty.vercel.app"
     }
 ];
 

@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -61,6 +61,17 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px; /* Adjust the margin if you need space between content and image */
 }
 
 section:hover {
@@ -168,7 +179,26 @@ footer {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+    main {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .projects-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .contact-info a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 900px) {
     header h1 {
         font-size: 2em;
     }
@@ -181,4 +211,116 @@ footer {
     .contact-info a {
         font-size: 20px;
     }
+
+    .projects-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    form input, form textarea {
+        font-size: 1em;
+    }
 }
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contact-info a {
+        font-size: 18px;
+    }
+
+    .projects-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    form label {
+        font-size: 1.1em;
+    }
+
+    form input, form textarea {
+        font-size: 1em;
+    }
+
+    form button {
+        font-size: 1em;
+        padding: 12px;
+    }
+}
+
+/* For very small mobile screens */
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .contact-info a {
+        font-size: 16px;
+    }
+
+    .projects-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    form label {
+        font-size: 1em;
+    }
+
+    form input, form textarea {
+        font-size: 1em;
+    }
+
+    form button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+.skills {
+    text-align: center;
+    margin: 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.skill i {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+/* Set unique colors for each icon */
+.skill .fa-html5 { color: #E34F26; }
+.skill .fa-css3-alt { color: #1572B6; }
+.skill .fa-js-square { color: #F7DF1E; }
+.skill .fa-react { color: #61DAFB; }
+.skill .fa-git-alt { color: #F05032; }
+.skill .fa-github { color: #333; }
