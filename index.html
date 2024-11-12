@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Tomide, a passionate front-end developer.">
+    <meta name="keywords" content="Tomide, Portfolio, Front-end Developer, Web Development">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Tomide, a passionate front-end developer with a knack for building dynamic and responsive web applications. 
+                With a strong foundation in HTML, CSS, and JavaScript, I love turning design ideas into interactive, user-friendly experiences. 
+            </p>
+            <video src="tommmy.mp4" autoplay muted controls></video>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Introduction to Psychology - Alison (2024)</li>
+                <li>Bachelor's in Computer Science - Caleb University (2022-2026)</li>
+                <li>Web Development Bootcamp - Online Academy (2022-Present)</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-gallery">
+                <!-- JavaScript will dynamically populate this area -->
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>SEO Optimization</li>
+                <li>Consultation</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git/GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+         <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contact-form" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="number">Phone Number:</label>
+                    <input type="number" id="number" name="number" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="feedback" aria-live="polite"></div>
+            </section>
+            
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/thetomide" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/AdejuwonAkinto1" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Tomzywhite" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:adejuwonakintomide"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Tomide. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
